@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nail Art Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Nail Art Gallery</div>
+        <nav class="nav">
+            <button class="menu-toggle" aria-label="Toggle Menu">&#9776;</button>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- Home Section -->
+        <section id="home" class="home">
+            <h1>Welcome to Nail Art Gallery</h1>
+            <p>Discover creative and inspiring nail designs.</p>
+            <img src="1.jpeg" alt="Beautiful Nail Art" class="hero-image">
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="services">
+            <h2>Our Services</h2>
+            <div class="service-cards">
+                <div class="card">
+                    <img src="2.jpeg" alt="Classic Manicure">
+                    <h3>Classic Manicure</h3>
+                </div>
+                <div class="card">
+                    <img src="3.jpeg" alt="Acrylic Nails">
+                    <h3>Acrylic Nails</h3>
+                </div>
+                <div class="card">
+                    <img src="4.jpeg" alt="Nail Art">
+                    <h3>Custom Nail Art</h3>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery Section -->
+        <section id="gallery" class="gallery">
+            <h2>Gallery</h2>
+            <div class="gallery-grid">
+                <img src="5.jpeg" alt="Nail Design 1">
+                <img src="6.jpeg" alt="Nail Design 2">
+                <img src="1.jpeg" alt="Nail Design 3">
+                <img src="2.jpeg" alt="Nail Design 4">
+                <img src="5.jpeg" alt="Nail Design 5">
+               
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about">
+            <h2>About Us</h2>
+            <p>At Nail Art Gallery, we combine creativity and professionalism to provide stunning nail designs for every occasion.</p>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>Reach out to book your appointment today!</p>
+            <form>
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Nail Art Gallery. All rights reserved.</p>
+    </footer>
+    <script>
+      const menuToggle = document.querySelector('.menu-toggle');
+const navLinks = document.querySelector('.nav-links');
+
+menuToggle.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+});
+
+    </script>
+</body>
+</html>
